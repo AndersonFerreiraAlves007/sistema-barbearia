@@ -1,0 +1,7 @@
+https://barbearia-server.andersonferreiraalves.com
+
+https://barbearia-client.andersonferreiraalves.com
+
+https://barbearia-checkout.andersonferreiraalves.com
+
+https://barbearia-gerencial.andersonferreiraalves.com
