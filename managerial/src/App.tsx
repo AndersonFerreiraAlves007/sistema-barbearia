@@ -1,11 +1,11 @@
 import React from "react";
 
 function App() {
-    return (
-        <div >
+	return (
+		<div >
      Luanderson Módulo Gerencial 0.1.0
-        </div>
-    );
+		</div>
+	);
 }
 
 export default App;
