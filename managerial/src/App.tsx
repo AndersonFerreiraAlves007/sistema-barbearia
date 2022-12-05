@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import React from "react";
 
 function App() {
-  return (
-    <div >
-      Gerencial
-    </div>
-  )
+    return (
+        <div >
+     Luanderson Módulo Gerencial 0.1.0
+        </div>
+    );
 }
 
-export default App
+export default App;

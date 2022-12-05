@@ -1,12 +1,11 @@
-import { useState } from 'react'
+import React from "react";
 
 function App() {
-
-  return (
-    <div >
-     
-    </div>
-  )
+    return (
+        <div >
+     Luanderson App Client 0.1.0
+        </div>
+    );
 }
 
-export default App
+export default App;
