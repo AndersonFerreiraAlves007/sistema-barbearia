@@ -1,6 +1,6 @@
 import React, { FC, useState } from "react";
 import { AppBar } from "../Appbar";
-import { MiniDrawer } from "../Drawer";
+import { MiniDrawer } from "../DrawerMenu";
 import Box from "@mui/material/Box";
 
 export interface LayoutProps {
