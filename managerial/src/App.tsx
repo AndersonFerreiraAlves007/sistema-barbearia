@@ -1,10 +1,16 @@
 import React from "react";
+import { SnackbarProvider } from "notistack";
+import { ThemeProvider } from "@mui/material/styles";
+import { theme } from "./themes/default";
+import CssBaseline from "@mui/material/CssBaseline";
 
 function App() {
 	return (
-		<div >
-     Luanderson Módulo Gerencial 0.1.0
-		</div>
+		<SnackbarProvider maxSnack={6}>
+			<ThemeProvider theme={theme}>
+				<CssBaseline />
+			</ThemeProvider>
+		</SnackbarProvider>
 	);
 }
 

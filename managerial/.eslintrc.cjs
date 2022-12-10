@@ -19,6 +19,7 @@ module.exports = {
 		"indent": [2, "tab"],
 		"quotes": ["error", "double"],
 		"semi": ["error", "always"],
-		"no-multiple-empty-lines":  ["error"]
+		"no-multiple-empty-lines":  ["error"],
+		"@typescript-eslint/no-empty-interface": "off"
 	}
 };
