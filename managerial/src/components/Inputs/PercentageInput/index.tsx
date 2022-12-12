@@ -2,16 +2,16 @@ import React, { FC, useState } from "react";
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 
-export interface PriceInputProps {
+export interface PercentageInputProps {
 
 }
 
-export const PriceInput: FC<PriceInputProps> = () => {
+export const PercentageInput: FC<PercentageInputProps> = () => {
 	const [value, setValue] = useState("");
 
 	const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
 		const newValue = event.target.value;
-		setValue(`R$: ${formatNumberMask(newValue)}`);
+		setValue(`${formatNumberMask(newValue)} %`);
 	};
 
 	function formatNumberMask(value: string) {

@@ -1,17 +1,17 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { PriceInput } from ".";
+import { PercentageInput } from ".";
 
 export default {
-	title: "Inputs/PriceInput",
-	component: PriceInput,
+	title: "Inputs/PercentageInput",
+	component: PercentageInput,
 	/* argTypes: {
 		backgroundColor: { control: "color" },
 	}, */
-} as ComponentMeta<typeof PriceInput>;
+} as ComponentMeta<typeof PercentageInput>;
 
-const Template: ComponentStory<typeof PriceInput> = (args) => <PriceInput {...args} />;
+const Template: ComponentStory<typeof PercentageInput> = (args) => <PercentageInput {...args} />;
 
 export const Primary = Template.bind({});
 

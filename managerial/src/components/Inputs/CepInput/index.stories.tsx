@@ -1,17 +1,17 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { PriceInput } from ".";
+import { CepInput } from ".";
 
 export default {
-	title: "Inputs/PriceInput",
-	component: PriceInput,
+	title: "Inputs/CepInput",
+	component: CepInput,
 	/* argTypes: {
 		backgroundColor: { control: "color" },
 	}, */
-} as ComponentMeta<typeof PriceInput>;
+} as ComponentMeta<typeof CepInput>;
 
-const Template: ComponentStory<typeof PriceInput> = (args) => <PriceInput {...args} />;
+const Template: ComponentStory<typeof CepInput> = (args) => <CepInput {...args} />;
 
 export const Primary = Template.bind({});
 

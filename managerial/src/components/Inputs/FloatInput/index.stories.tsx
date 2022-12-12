@@ -1,17 +1,17 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
-import { PriceInput } from ".";
+import { FloatInput } from ".";
 
 export default {
-	title: "Inputs/PriceInput",
-	component: PriceInput,
+	title: "Inputs/FloatInput",
+	component: FloatInput,
 	/* argTypes: {
 		backgroundColor: { control: "color" },
 	}, */
-} as ComponentMeta<typeof PriceInput>;
+} as ComponentMeta<typeof FloatInput>;
 
-const Template: ComponentStory<typeof PriceInput> = (args) => <PriceInput {...args} />;
+const Template: ComponentStory<typeof FloatInput> = (args) => <FloatInput {...args} />;
 
 export const Primary = Template.bind({});
 
