@@ -4,6 +4,8 @@ import { ThemeProvider } from "@mui/material/styles";
 import { theme } from '../src/themes/default'
 import CssBaseline from "@mui/material/CssBaseline";
 import { MAX_SNACK } from '../src/utils/constants'
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { AdapterLuxon } from "@mui/x-date-pickers/AdapterLuxon";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -27,7 +29,9 @@ export const decorators = [
     <SnackbarProvider maxSnack={MAX_SNACK}>
         <ThemeProvider theme={theme}>
 						<CssBaseline />
-            <Story/>
+						<LocalizationProvider dateAdapter={AdapterLuxon}>
+            	<Story/>
+						</LocalizationProvider>
         </ThemeProvider>
     </SnackbarProvider>
   ),
