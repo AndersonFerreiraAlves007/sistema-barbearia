@@ -1,24 +1,24 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
+import { action } from "@storybook/addon-actions";
 
-import { TextInput } from ".";
+import { NumberInput } from ".";
 import { ContainerInputTest } from "../../../utils/ContainerInputTest";
 
-
 export default {
-	title: "Inputs/TextInput",
-	component: TextInput,
+	title: "Inputs/NumberInput",
+	component: NumberInput,
 	/* argTypes: {
 		backgroundColor: { control: "color" },
 	}, */
-} as ComponentMeta<typeof TextInput>;
+} as ComponentMeta<typeof NumberInput>;
 
-const Template: ComponentStory<typeof TextInput> = (args) => <ContainerInputTest initValue={""}><TextInput {...args} /></ContainerInputTest>;
+const Template: ComponentStory<typeof NumberInput> = (args) => <ContainerInputTest initValue={0}><NumberInput {...args} /></ContainerInputTest>;
 
 export const Primary = Template.bind({});
 
-function validator(value: string) {
-	if(value.length > 10) {
+function validator(value: number) {
+	if(value > 10) {
 		return {
 			isError: true,
 			errorMessage: "Não pode ser maior que 10"
@@ -32,6 +32,8 @@ function validator(value: string) {
 }
 
 Primary.args = {
+	decimalPlaces: 2,
 	label: "Nome Geral",
-	validator: validator
+	validator: validator,
+	prefix: ""
 };
