@@ -20,6 +20,7 @@ module.exports = {
 		"quotes": ["error", "double"],
 		"semi": ["error", "always"],
 		"no-multiple-empty-lines":  ["error"],
-		"@typescript-eslint/no-empty-interface": "off"
+		"@typescript-eslint/no-empty-interface": "off",
+		"react/display-name": "off"
 	}
 };
